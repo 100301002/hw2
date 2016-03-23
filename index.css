@@ -1,0 +1,309 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 960px;
+    min-width: 660px;
+    margin: 0 auto 20px;
+    padding-right: 1%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: gray;
+    font-size: 0.75em;
+}
+
+nav ul li{
+    display: inline;
+}
+
+h3 {
+    margin: 0;
+}
+
+.float-left{
+    float: left;
+}
+
+
+/*右上角一堆連結*/
+.float-right{
+    margin-top: 32px;
+}
+
+#nav-top{
+    border-bottom: dotted;
+    border-color: rgb(192, 192, 192);
+    border-width: 1px;
+    margin-left: 100px;
+    height: 20px;
+}
+
+#nav-bottom{
+    margin-left: 100px;
+    height: 30px;
+    text-align: right;
+}
+
+#nav-bottom ul{
+    margin-top: 3px;
+}
+
+
+/*上面灰灰黃黃橘菊的目錄*/
+#nav-image{
+    clear: both;
+}
+
+#menu-img{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/*駐校藝術家*/
+article header{
+    display: flex;
+}
+
+article header h3{
+    flex: 1.5;
+}
+
+article nav{
+    display: flex;
+    flex: 1;
+}
+
+#ul-one, #ul-two{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 5px;
+}
+
+#ul-one li, #ul-two li{
+    border-bottom: dotted;
+    border-color: rgb(192, 192, 192);
+    border-width: 1px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.nav-a{
+    color: green;
+}
+.nav-a:hover{
+    color: orange;
+}
+
+#ul-one li:nth-child(4), #ul-two li:nth-child(4) {
+    border-bottom: none;
+}
+
+#concert-left {
+    display: flex;
+}
+
+#concert-black {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 30px 20px 0;
+}
+
+#school-concert{
+    display: inline-block;
+    margin: 3.5px 0 12px;
+}
+
+strong{
+    color: rgb(255, 78, 30);
+}
+
+pre{
+    color: white;
+    line-height: 1.6;
+    font-size: 0.9em;
+}
+
+
+/*標題字們*/
+.green-title{
+    margin: 20px 0;
+    color: rgb(84, 140, 33);
+    font-size: 1.4em;
+}
+
+.performance-group{
+    color: rgb(84, 140, 33);
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+.common-font{
+    font-size: 0.7em;
+    line-height: 1.7;
+}
+
+
+/*音樂會曲目表格*/
+table{
+    background-color: rgb(234,244,214);
+    border-collapse: collapse;
+}
+
+tr,td{
+    border: 1px solid white;
+}
+
+table tr td {
+    padding: 2px;
+}
+
+table tr:nth-child(1) {
+    background-color: rgb(136,200,0);
+}
+
+table tr td:nth-child(1) {
+    width: 12.5%;
+}
+
+table tr div {
+    text-align: center;
+}
+
+.cross {
+    text-align: center;
+    background-color: white;
+}
+
+#gray-border{
+    border:1px solid rgb(224, 218, 209);
+}
+
+td strong{
+    color: black;
+}
+
+#concert-content{
+    display: flex;
+}
+
+#program {
+    margin-right: 1%;
+    flex: 7.1;
+}
+
+.width-100{
+    width: 100%;
+}
+
+/*側欄*/
+aside{
+    padding-right: 1%;
+    padding-left: 1%;
+    flex: 2.3;
+    background-color: rgb(234, 244, 214);
+    margin-top: 20px;
+    border-top: solid;
+    border-color: rgb(179, 206, 47)
+}
+
+section p {
+    font-size: 0.7em;
+    line-height: 1.7;
+}
+
+#font-med {
+    font-size: 1.2em;
+}
+
+#program section {
+    display: flex;
+    flex-direction: column;
+}
+
+#program section>div {
+    display: flex;
+    border-bottom: dotted;
+    border-color: orange;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-width: 1px;
+}
+
+#program section>div:nth-child(3) {
+    border: none;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    flex: 6.2;
+    margin-left: 5px;
+}
+
+.pic-38 {
+    flex: 3.8;
+}
+
+div.pic-38 {
+    flex-direction: column;
+}
+
+#top {
+    display: block;
+    text-align: right;
+    margin-top: 30px;
+}
+
+
+/*footer*/
+footer{
+    display: flex;
+    border-top: dotted;
+    border-top-width: 1px;
+    border-bottom: solid;
+    border-bottom-width: 10px;
+    border-color: rgb(192,192,192);
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7em;
+    line-height: 1.7;
+}
+
+footer>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    flex: 5.5;
+}
+
+footer>div:nth-child(2){
+    text-align: right;
+    flex: 4.5;
+}
+
+footer>div:nth-child(2)>a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
